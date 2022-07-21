@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>temprature converter</title>
+</head>
+<body>
+	<form>
+		<input type="number" name="" value="#" placeholder="Celsius" id="cel" onchange="fun()">
+		<input type="number" name="" value="#" placeholder="fahranhight" id="fah" onchange="fan()">
+		
+	</form>
+	
+
+</div>
+</body>
+<script type="text/javascript">
+	function fun(){
+		var fahRenheit = 1.8 * document.getElementById("cel").value + 32;
+		
+		console.log("Fah"+"="+fahRenheit);
+		
+		//document.getElementById('fah').innerHTML = fahRenheit;
+
+	}
+	function fan(){
+		var cel = document.getElementById('fah').value;
+		var c = (cel-32)/1.8;
+		console.log("cel"+"="+c);
+	}
+</script>
+</html>
